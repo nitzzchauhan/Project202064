@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
+import Signup from "./components/auth/signup.jsx";
 
 const appRouter = createBrowserRouter([
   { 
@@ -10,6 +11,10 @@ const appRouter = createBrowserRouter([
   { 
     path: "/about",
     element: <h1>Hello i am about</h1>
+  }, 
+  { 
+    path: "/signup",
+    element: <Signup/>
   }, 
 ]);
 
